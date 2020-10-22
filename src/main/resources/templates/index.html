@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Home</title>
+</head>
+<body>
+
+<h1>Ir izdevās</h1>
+<h2>My Recipes</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+    </tr>
+    <tr th:each="recipe : ${recipes}">
+        <td th:text="${recipe.id}">id</td>
+        <td th:text="${recipe.description}">descriptions</td>
+    </tr>
+</table>
+
+</body>
+</html>
